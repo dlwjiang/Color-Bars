@@ -99,6 +99,10 @@
 		   .data(newData)
 		   .enter()
 		   .append("svg:image")
+		   .transition(1000)
+		   .delay(function(d,i){
+		   	return i*20;
+		   })
 		   .attr("xlink:href", function(d){
 		  		return "logos/" + d[0]; 
 		   })
