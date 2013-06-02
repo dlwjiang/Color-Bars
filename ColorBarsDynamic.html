@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Color Bars Dynamic</title>
+
+		<script type="text/javascript" src="d3/d3.v3.js"></script>
+
+		<style type="text/css">
+
+    		.axis line {
+		        
+		        fill: none;
+		        stroke: black;
+		        stroke-width: 5;
+
+			}
+
+    		.axis text {
+
+		        font-family: helvetica;
+		        font-size: 15px;
+
+			}	
+
+			#title{
+
+				width:100%;
+				font-size: 20px;
+				text-align: center;
+
+				border:2px solid;
+				border-radius:25px;
+
+				background-color: lightCyan;
+				margin-bottom: 10px;
+
+			}	
+
+
+			.graph{
+
+				height:350px;
+				width:65%;
+
+				border:2px solid;
+				border-radius:5px;
+
+				padding-left: 10px;
+				padding-right:10px;
+				padding-top: 10px;
+
+			}
+
+			.seasonButtons{
+
+				width:100px;
+				position:flow;
+				border:2px solid;
+				border-radius:5px;
+				margin-left:60px;
+
+			}
+
+			#buttonContainer{
+
+				margin-top:-25px;
+				margin-left:58px;
+
+			}
+
+			
+			#spring{ background-color: lightGreen;  }
+
+			#summer{ background-color: Coral;       }
+
+			#autumn{ background-color: Chocolate;   }
+
+			#winter{ background-color: Aquamarine;  }
+			
+
+		</style>
+		
+	</head>
+
+	<body>
+
+		<div id = "firstGraph" class = "graph">
+
+			<div id = "title"> COLOR bar </div>	
+					
+			<div id = "graphHolder1"></div>
+
+			<div id = "buttonContainer">
+				<button class = "seasonButtons" id = "spring">Spring 2012</button>
+				<button class = "seasonButtons" id = "summer">Summer 2012</button>
+				<button class = "seasonButtons" id = "autumn">Autumn 2012</button>
+				<button class = "seasonButtons" id = "winter">Winter 2012</button>
+			</div>
+
+		</div><!-- end firstGraph -->
+	    
+		<script type="text/javascript" src = "colorBarsDynamic.js"></script>
+
+	</body>
+
+
+
+
+
+
+</html>
